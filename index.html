@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHZONE - Home</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        /* --- NAVIGATION BAR --- */
+        .nav {
+            background: black;
+            box-shadow: 0 4px 10px gray;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            position: relative;
+            z-index: 100;
+        }
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu ul {
+            list-style: none;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 15px;
+            display: block;
+            font-size: 16px;
+        }
+        .menu li a:hover {
+            background-color: gray;
+        }
+
+        /* --- HERO BANNER (HOME SPECIAL) --- */
+        .hero-banner {
+            background: white;
+            margin: 30px 20px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: black;
+        }
+        .hero-text p {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 25px;
+            text-align: left;
+            width: 100%;
+        }
+        .hero-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .hero-btn:hover {
+            background-color: red;
+        }
+        .hero-img {
+            width: 350px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* --- SECTION TITLE --- */
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+
+        /* --- MAIN PRODUCTS CONTAINER --- */
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 30px;
+        }
+        .d1 {
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            width: 300px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .d1 img {
+            width: 180px;
+            height: 180px;
+            display: block;
+            margin: 0 auto 15px auto;
+            object-fit: contain;
+        }
+        .d1 h2 {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .d1 h4 {
+            color: gray;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        .d1 p {
+            text-align: justify;
+            width: 100%;
+            font-size: 14px;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+        .ju {
+            background-color: black;
+            color: white;
+            width: 100%;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .d1 button:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background-color: black;
+            padding: 30px 20px 20px 20px;
+            margin-top: 50px;
+        }
+        .footer i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50px;
+            margin: 0 5px 20px 5px;
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+        .footer i:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .footer hr {
+            border: 0;
+            border-top: 1px solid #333;
+            margin-bottom: 15px;
+        }
+        .text {
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <div class="nav">
+        <div class="logo">TECHZONE</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="Website.html">Products</a></li>   
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 2. HERO BANNER -->
+    <div class="hero-banner">
+        <div class="hero-text">
+            <h1>BUILD YOUR<br>DREAM TECH</h1>
+            <p>
+                Discover powerful desktops, sleek laptops, and high-performance smartphones 
+                engineered for both ultimate gaming experiences and professional workspaces.
+            </p>
+            <a href="Website.html" class="hero-btn">SHOP NOW</a>
+        </div>
+        
+        <img src="IT.jpg" alt="Featured Tech" class="hero-img">
+    </div>
+
+    <!-- 3. SECTION TITLE -->
+    <h2 class="section-title">Popular Products</h2>
+
+    <!-- 4. POPULAR PRODUCTS LIST -->
+    <div class="main">
+        <!-- Phone Card -->
+        <div class="d1">
+            <img src="Phone1.jpg" alt="Phone">
+            <h2>Smartphones</h2>
+            <h4>Starting - $1000</h4>
+            <p>
+                Experience the next generation of mobile connectivity and high-resolution cameras with our latest flagship smartphone line.
+            </p>
+            <button class="ju">View Details</button>
+        </div>
+
+        <!-- Laptop Card -->
+        <div class="d1">
+            <img src="Laptop1.jpg" alt="Laptop">
+            <h2>Laptops</h2>
+            <h4>Starting - $1,500</h4>
+            <p>
+                Uncompromised power on the go. Perfect for remote work, heavy multitasking, and high-end creative workflows.
+            </p>
+            <button class="ju">View Details</button>
+        </div>
+
+        <!-- Desktop Card -->
+        <div class="d1">
+            <img src="Computer1.jpg" alt="Desktop">
+            <h2>Desktops</h2>
+            <h4>Starting - $2,000</h4>
+            <p>
+                Ultimate custom desktop systems designed for raw gaming frame rates, deep learning workloads, and stability.
+            </p>
+            <button class="ju">View Details</button>
+        </div>
+    </div>
+
+    <!-- 5. FOOTER -->
+    <div class="footer">
+        <center>
+         <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+
+        </center>
+        <hr>
+        <div class="text">Developed by Batch 5-26. &copy; All rights reserved.</div>
+    </div>
+
+</body>
+</html>
